@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/home.css">
+    <script src="https://kit.fontawesome.com/05d066deef.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            Shift Builder
+        </div>
+        <div>
+            Hello, <span id="username" class="username">UserName</span>
+        </div>
+    </header>
+    <nav class="navigation">
+        <ul class="navigation__list">
+
+            <li class="navigation__list-item">
+                <a href="#addShift" id="addShift">Add shift</a>
+            </li>
+            <li class="navigation__list-item">
+                <a href="./profile.html">Profile</a>
+            </li>
+            <li class="navigation__list-item">
+                <a id="logout">Log out</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="error" class="error">
+            <div id="error-box" class="error-box">
+                <div class="error-box__message">Here will be the error message</div>
+                <button type="button" class="error-box__btn">OK</button>
+            </div>
+        </div>
+        <div class="modal" id="modal">
+            <section class="addShift modal__content" id="addShift">
+                <div class="modal__content-header">
+                    <span class="close" id="close">&times;</span>
+                    <h3>Add Shift</h3>
+                </div>
+                <hr>
+
+
+                <form class="form" id="form">
+                    <div class="form__item form__item-shiftName">
+                        <label for="shiftName">Name for Shift</label>
+                        <input type="text" id="shiftName" name="shiftName">
+                    </div>
+                    <div class="form__item form__item-startDate">
+                        <label for="start">Start Shift</label>
+                        <input type="datetime-local" id="start" name="start">
+                    </div>
+                    <div class="form__item form__item-endDate">
+                        <label for="end">End shift</label>
+                        <input type="datetime-local" id="end" name="end">
+                    </div>
+                    <div class="form__item form__item-wage">
+                        <label for="wage">Wage/Hour</label>
+                        <input type="number" id="wage" name="wage" min="1" max="999.99">
+                    </div>
+                    <div class="form__item form__item-comments">
+                        <label for="comments">Description:</label>
+                        <textarea id="comments" name="comments" rows="4" cols="50" maxlength="100">
+
+                    </textarea>
+                    </div>
+                    <button type="submit" class="btn" id="addShift">+</button>
+                </form>
+            </section>
+            <div id="loader"></div>
+        </div>
+        <section class="shift">
+            <table class="shift__table">
+                <thead class="table__head">
+                    <tr>
+                        <th>
+                            <i class="fa-solid fa-magnifying-glass"></i><input type="text" class="search-input"
+                                id="search__name" placeholder="Name">
+                        </th>
+                        <th><i class="fa-solid fa-magnifying-glass"></i><input type="date" class="search-input"
+                                id="search__date--start" placeholder="Start Date">
+                        </th>
+                        <th><i class="fa-solid fa-magnifying-glass"></i><input type="date" class="search-input"
+                                id="search__date--end" placeholder="End Date"></th>
+                        <th>Hours</th>
+                        <th>Wage</th>
+                        <th>Wage*Hours</th>
+                        <th>Description </th>
+                    </tr>
+                </thead>
+                <tbody class="table__body">
+
+                </tbody>
+                <tfoot class="table__foot">
+                    <tr>
+                        <td colspan="7">You earned in: <span id="start-period"> </span> &#8660; <span id="end-period">
+                            </span>
+                            the amount £ <span id=total></span> </td>
+                    </tr>
+                </tfoot>
+
+            </table>
+        </section>
+
+
+    </main>
+    <footer>
+        <ul class="navigation__list">
+            <li class="navigation__list-item">
+                <a href="#addShift" id="addShift">Add shift</a>
+            </li>
+            <li class="navigation__list-item">
+                <a href="./profile.html">Profile</a>
+            </li>
+            <li class="navigation__list-item">
+                <a id="logout">Log out</a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="./js/home.js"></script>
+    <script src="./js/table.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/login_register.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="container__title">
+            <h3>Login</h3>
+        </div>
+        <div class="form__message"></div>
+        <div class="container__form">
+            <form class="form__block">
+                <div class="form__group">
+                    <label for="emai">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Your Email">
+                    <div class="form__group-message"></div>
+                </div>
+                <div class="form__group">
+                    <label for="pass">Password</label>
+                    <input type="password" name="pass" id="password" placeholder="Set password">
+                    <div class="form__group-message"></div>
+                </div>
+                <button type="submit" id="loginbtn" class="btn">Login</button>
+            </form>
+        </div>
+        <div class="container__links">
+            <div class="link-item">
+                <a href="register.html">You do not have an account: Register</a>
+            </div>
+            <div class="link-item">
+                <a href="#">You forgot your password: Reset</a>
+            </div>
+        </div>
+    </div>
+    <!-- <script type="module" src="./temporary.js"></script> -->
+    <script type="module" src="./js/login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/login_register.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="container__title">
+            <h3>Register</h3>
+        </div>
+        <div class="container__form">
+            <div class="form__message"></div>
+            <form class="form__block">
+                <div class="form__group">
+                    <label for="username">User Name</label>
+                    <input type="text" id="username" name="username">
+                    <div class="form__group-message"></div>
+                </div>
+                <div class="form__group">
+                    <label for="mail">Email</label>
+                    <input type="mail" id="mail" name="mail">
+                    <div class="form__group-message"></div>
+                </div>
+                <div class="form__group">
+                    <label for="fname">Full Name</label>
+                    <input type="text" id="fullname" name="fname">
+                    <div class="form__group-message"></div>
+                </div>
+
+                <div class="form__group">
+                    <label for="age">Age</label>
+                    <input type="text" id="age" name="age" size="2" maxlength="2">
+                    <div class="form__group-message"></div>
+                </div>
+                <div class="form__group">
+                    <label for="pass">Create password</label>
+                    <input type="password" id="password" name="pass">
+                    <div class="form__group-message"></div>
+                </div>
+                <div class="form__group">
+                    <label for="rpass">Confirm password</label>
+                    <input type="password" id="repeatpassword" name="rpass">
+                    <div class="form__group-message"></div>
+                </div>
+                <button type="submit" id="btn" class="btn">Register</button>
+            </form>
+        </div>
+        <div class="container__links">
+            <div class="link-item">
+                <a href="login.html">You have an account: Login</a>
+            </div>
+        </div>
+    </div>
+    <script src="./js/localStorage.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+@import url("./main.css");
+
+/*Layout for Register and Login*/
+
+.container {
+    background: white;
+    border: var(--border-thin) solid var(--mn-blue);
+    box-shadow: 0 0 5px 2px var(--persian-blue);
+    border-radius: var(--br-large);
+    padding: 2rem 1rem;
+    margin: 0 0.5rem;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-direction: column;
+}
+
+.container__title {
+    font-size: var(--fs-header);
+    color: var(--oxford-blue);
+    text-align: center;
+}
+
+.container__form>* {
+    margin-bottom: 0.5rem;
+}
+
+.container__form {
+    width: 100%;
+}
+
+.form__message {
+    width: 100%;
+}
+
+.form__message--active {
+    background: var(--clr-success);
+    padding: 0.5rem;
+    border-radius: var(--br-small);
+    box-shadow: 0px 0px 3px 1px var(--clr-success);
+}
+
+.form__group {
+    position: relative;
+    border: var(--border-thin) solid var(--mn-blue);
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border-radius: var(--br-small);
+}
+
+.form__group--error {
+    border: var(--border-thin) solid var(--clr-error);
+    box-shadow: 0px 0px 3px 1px var(--clr-error);
+}
+
+.form__group--success {
+    border: var(--border-thin) solid var(--clr-success);
+    box-shadow: 0px 0px 3px 1px var(--clr-success);
+}
+
+.form__group label {
+    position: absolute;
+    top: -0.6rem;
+    left: 1rem;
+    padding-inline: 5px;
+    background: white;
+    /*background-color: var(--baby-blue);*/
+}
+
+.form__group input {
+    font-weight: var(--fw-semi-bold);
+    color: var(--oxford-blue);
+    margin-top: 0.5rem;
+    padding-inline: 0.5rem;
+    padding-block: 0.5rem;
+    width: 100%;
+}
+
+.form__group-message {
+    font-size: var(--fs-small);
+    color: var(--clr-error);
+    padding-inline: 0.5rem;
+}
+
+.btn {
+    border: var(--border-thin) solid var(--mn-blue);
+    border-bottom: var(--border-bold) solid var(--mn-blue);
+    border-radius: var(--br-large);
+    text-transform: uppercase;
+    font-weight: var(--fw-semi-bold);
+    width: 100%;
+    padding-block: 0.5rem;
+}
+
+.btn:hover {
+    background: var(--mn-blue);
+    color: var(--baby-blue);
+}
+
+
+/*Media*/
+@media (max-width:412px) {
+    .container {
+        width: 100%;
+    }
+
+    .container__title {
+        font-size: var(--fs-big);
+
+    }
+}

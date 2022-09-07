@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/profile.css">
+    <title>Edit Profile</title>
+</head>
+
+<body>
+    <main class="container">
+        <div class="container__title">
+            <h3>Edit your profile</h3>
+        </div>
+        <section id="userData" class="userData">
+            <h4>Your old details are:</h4>
+            <ul class="userData__list">
+                <li class="userData__list--item">User name: <span id="spanUserName"></span></li>
+                <li class="userData__list--item">Mail: <span id="spanMail"></span></li>
+                <li class="userData__list--item">Full name: <span id="spanFullName"></span></li>
+                <li class="userData__list--item">Age: <span id="spanAge"></span></li>
+                <li class="userData__list--item">Password: <span id="spanPassword"></span></li>
+            </ul>
+        </section>
+        <section id="newUserData" class="newUserData">
+            <form class="form__block">
+                <div class="form__group">
+                    <label for="username">New user name</label>
+                    <input type="text" id="username" name="username">
+                    <div class="form__group-message"></div>
+                </div>
+                <div class="form__group">
+                    <label for="mail"> New mail</label>
+                    <input type="mail" id="mail" name="mail">
+                    <div class="form__group-message"></div>
+                </div>
+                <div class="form__group">
+                    <label for="fname">New full name</label>
+                    <input type="text" id="fullname" name="fname">
+                    <div class="form__group-message"></div>
+                </div>
+                <div class="form__group">
+                    <label for="age">Age</label>
+                    <input type="text" id="age" name="age" size="2" maxlength="2">
+                    <div class="form__group-message"></div>
+                </div>
+                <div class="form__group">
+                    <label for="pass">Change password</label>
+                    <input type="password" id="password" name="pass">
+                    <div class="form__group-message"></div>
+                </div>
+                <div class="form__group">
+                    <label for="rpass">Confirm password</label>
+                    <input type="password" id="repeatpassword" name="rpass">
+                    <div class="form__group-message"></div>
+                </div>
+                <button type="button" id="btn" class="btn">Change</button>
+            </form>
+            <div class="form__message"></div>
+        </section>
+
+
+    </main>
+    <script src="./js/profile.js"></script>
+
+</body>
+
+</html>

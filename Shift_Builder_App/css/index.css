@@ -1,0 +1,62 @@
+@import url("./main.css");
+
+.container {
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.logo {
+    color: var(--persian-blue);
+    font-family: 'Permanent Marker', cursive;
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-header);
+    align-self: flex-start;
+    margin: 2rem;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    box-shadow: 0 0 5px 2px var(--persian-blue);
+}
+
+.content__paragraph {
+    max-width: 50ch;
+    padding-inline: 1rem;
+    padding-block: 1rem;
+    line-height: 1.5rem;
+    font-size: var(--fs-normal);
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: var(--br-small);
+    color: white;
+}
+
+.cta {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cta a {
+    font-weight: var(--fw-semi-bold);
+    text-transform: uppercase;
+    color: var(--oxford-blue);
+    border: var(--border-thin) solid var(--oxford-blue);
+    border-bottom: var(--border-bold) solid var(--oxford-blue);
+    border-radius: var(--br-large);
+    padding: 0.7rem 1.5rem;
+    box-shadow: 0 0 5px 2px var(--persian-blue);
+    background-color: var(--white);
+}
+
+.cta a:hover {
+    background-color: transparent;
+}

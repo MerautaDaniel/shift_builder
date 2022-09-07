@@ -1,0 +1,7 @@
+@import url("./main.css");
+@import url("./login_register.css");
+
+li span {
+    color: var(--oxford-blue);
+    font-weight: var(--fw-semi-bold);
+}

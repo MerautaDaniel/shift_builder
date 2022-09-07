@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /*Font Family*/
+    font-family: 'Montserrat', sans-serif;
+
+    /*Font weight*/
+    --fw-thin: 200;
+    --fw-normal: 400;
+    --fw-semi-bold: 600;
+    --fw-bold: 700;
+
+    /*Font sizes*/
+    --fs-small: 14px;
+    --fs-normal: 16px;
+    --fs-big: 18px;
+    --fs-header: 24px;
+
+    /*Border*/
+    --border-thin: 1px;
+    --border-normal: 2px;
+    --border-bold: 5px;
+
+    /*Border radius*/
+    --br-small: 5px;
+    --br-large: 10px;
+
+    /*Colors*/
+    --white: #F6FAFE;
+    --oxford-blue: #091540;
+    --cornflower-blue: #7692ff;
+    --baby-blue: #abd2fa;
+    --mn-blue: #3d518c;
+    --persian-blue: #1b2cc1;
+
+    --clr-error: #d64933;
+    --clr-success: #28b800;
+
+}
+
+/*Resets*/
+input,
+button,
+textarea {
+    border: none;
+    background: none;
+    font-family: inherit;
+    font-size: var(--fs-normal);
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--persian-blue);
+}
+
+label {
+    font-size: var(--fs-small);
+}
+
+ul li {
+    list-style: none;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to top, var(--baby-blue) 0%, var(--cornflower-blue) 100%);
+}
